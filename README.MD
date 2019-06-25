@@ -4,13 +4,30 @@ Make sure the dependencies are installed before using
 
 `sudo apt-get install libbluetooth-dev`
 
-# Install
+# Install latest version (stable)
 
     pip install codewars
+
+# Install development version (unstable)
+
+    pip install git+https://github.com/Annihilator708/codewars@master
 
 # Info
 
     More to come...
+
+# Logger
+
+    Example:
+    ```
+    from codewars.logger import Logger
+    logger = Logger(appname="test", mode="DEBUG", write=False)
+    logger._testLoggerClass()
+    ```
+
+Note
+----
+The whole module makes use of the logger.
 
 # BlueTooth
 
