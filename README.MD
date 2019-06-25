@@ -19,16 +19,6 @@
 
 >In the following section you will find a brief example on how to use this
 >code. This library is ment to grow over time so more examples to come... 
->I prep my work in advance so documentation is a thing and will be present in
->the near future. But because I'm in a early phase of the project I still have 
->not generated my documentation. Don't let that fool you.. I try to keep 
->my docstrings as up-to-date as possible. There are plenty of examples 
->in the module just open the code and see where it imports anything from
->codewars. Not only the docstrings are usefull currently but perhaps also my
->own used tests to see if the setup works correctly. 
->Those examples below are however parts of raw snippets of test code and might
->not feel due to the confirm of PEP8 or flake8. Excuse mwha.
-
 
 ## Logger
 
