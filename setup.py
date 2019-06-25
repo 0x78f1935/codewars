@@ -5,7 +5,7 @@ with open("README.MD", "r") as f:
 
 setuptools.setup(
     name="codewars", # codewars when updating to pip
-    version="0.0.2",
+    version="0.0.2a",
     author="Annihilator708",
     author_email="",
     description="A toolbox for daily use. This is just a toolbox to make my life easier. Maybe yours too..",
