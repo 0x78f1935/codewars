@@ -57,6 +57,18 @@
     print("Scan results2: {}".format(scan_results2))
     ```
 
+## Wifi
+
+    Example:
+    ```
+    from codewars.wifi import Wifi
+    wifi = Wifi("enp0s31f6")
+    sniff_results = wifi.sniff(totalResults=10)
+    print(sniff_results)
+    info_results = wifi.info(sniff_results)
+    print(info_results)
+    wifi.sniff_forever(duration=300)
+    ```
 
 ---
 #### Refer to docstrings for more detailed documentation

@@ -15,7 +15,7 @@ setuptools.setup(
     classifiers=[
         "Programming Language :: Python :: 3.6",
         "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
-        "Operating System :: OS Independent",
+        "Operating System :: POSIX :: Linux",
         "Development Status :: 1 - Planning"
     ],
     install_requires=[
