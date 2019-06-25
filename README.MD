@@ -34,8 +34,10 @@ The whole module makes use of the logger.
     Example:
     ```
     from codewars.bluetooth import Bluetooth
-    bt = Bluetooth() # Initialize the class, Scans once
-    scan_results = bt.scan()  # Scan and overwrite history of scans
-    print(scan_results)
+    bt = Bluetooth()  # Initialize the class, Scans once
+    scan_results1 = bt.scan()  # Scan area for the default 10 seconds
+    scan_results2 = bt.run_until_discovered()  # Scan until a device is found
+    print("Scan results1: {}".format(scan_results1))
+    print("Scan results2: {}".format(scan_results2))
     ```
 Refer to docstrings for more detailed documentation
