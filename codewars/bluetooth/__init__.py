@@ -1,6 +1,9 @@
 from datetime import datetime
 import bluetooth
 
+from codewars.logger import Logger
+
+
 class Bluetooth(object):
     """This is a simple wrapper of the python package `PyBluez`.
     
@@ -10,7 +13,8 @@ class Bluetooth(object):
     `sudo apt-get install libbluetooth-dev`
     """
     def __init__(self):
-        print("Looking for devices...")
+        self.__logger = Logger(appname="Bluetooth", mode="DEBUG", write=False)
+        self.__logger.info("Looking for devices...")
         self.nearby_devices = bluetooth.discover_devices(duration=10, flush_cache=True, lookup_names=False)
         self.__discovering = False
 
@@ -124,7 +128,7 @@ class Bluetooth(object):
                 del info # clean memory
             return results
         else:
-            print("No devices found to fetch information from")
+            self.__logger.warning("No devices found to fetch information from")
             return None
 
 

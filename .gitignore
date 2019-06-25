@@ -105,3 +105,4 @@ venv.bak/
 
 # Package
 updatePYPI_*.*
+.vscode
