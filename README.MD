@@ -12,7 +12,7 @@
 
 ### Alternative latest version (stable)
 
-    1. Go to "https://github.com/Annihilator708/codewars/releases" and do
+    1. Go to "https://github.com/0x78f1935/codewars/releases" and do
     2. Download the latest version, unzip it.
     3. Open a virtualenv and navigate to the extracted folder.
     4. Now install the wheel package:
@@ -20,7 +20,7 @@
 
 ## Install development version (unstable)
 
-    pip install git+https://github.com/Annihilator708/codewars@master
+    pip install git+https://github.com/0x78f1935/codewars@master
 
 # Examples
 ## Info
