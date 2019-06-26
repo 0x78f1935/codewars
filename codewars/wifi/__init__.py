@@ -31,7 +31,7 @@ class Wifi(object):
         """
         conf.iface = iAddr
         self.__listener = []
-        self.logger = Logger("Codewars Wifi")
+        self.__logger = Logger("Codewars Wifi")
     
     def sniff(self, totalResults = 10):
         """Sniff Network packages on the selected `iAddr`
@@ -76,7 +76,7 @@ class Wifi(object):
             results = self.info(self.sniff())
             for item in results:
                 if item not in self.__listener: self.__listener.append(item)
-            self.logger.info("\n".join([f"{datetime.utcnow()} - {i}" for i in self.__listener][:-1]))
+            self.__logger.info("\n".join([f"{datetime.utcnow()} - {i}" for i in self.__listener][:-1]))
 
     def info(self, packages = []):
         """Look for information about a package
