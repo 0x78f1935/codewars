@@ -19,4 +19,4 @@ install:
   - pip install git+https://github.com/0x78f1935/codewars@master
 
 script:
-  - python docker_test.py
+  - sudo python docker_test.py
