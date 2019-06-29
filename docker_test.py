@@ -44,5 +44,9 @@ print(surf.post(
     json=True
     ))
 
+from codewars.scraper import Scraper
+scraper = Scraper(debug=True)
+scraper.hrefs(url = 'https://codewars.nl/space')
+
 from codewars.unittest import Test
 print(Test().run())
