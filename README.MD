@@ -3,7 +3,9 @@
 >Make sure to install all the dependencies needed for each individual module.
 
 ## Dependencies
-### Bluetooth: `sudo apt-get install libbluetooth-dev`
+### Required: 
+    - `sudo apt-get install gcc`
+    - `sudo apt-get install libbluetooth-dev`
 
 ---
 ## Install latest version (stable)

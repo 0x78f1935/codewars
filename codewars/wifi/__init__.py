@@ -18,7 +18,7 @@ class Wifi(object):
     The error `AttributeError: 'L2ListenSocket' object has no attribute 'ins'`
     is a reaction to the note above. Not the right permissions.
     """
-    def __init__(self, iAddr="enp0s31f6"):
+    def __init__(self, iAddr="eth0"):
         """You can use `ifconfig` to find the network name.
         Something like `mon0`.
         
@@ -26,7 +26,7 @@ class Wifi(object):
         ----------
         iAddr
             Type: String
-            Default: 'enp0s31f6'
+            Default: 'eth0'
             Description: The network interface to sniff on
         """
         conf.iface = iAddr
