@@ -107,5 +107,14 @@ to your liking. The `Dockerfile` downloads always the unstable version by **defa
         ))
     ```
 
+## Scraper
+
+    Example
+    ```
+    from codewars.scraper import Scraper
+    scraper = Scraper(debug=True)
+    scraper.hrefs(url = 'https://codewars.nl/space')
+    ```
+
 ---
 #### Refer to docstrings for more detailed documentation

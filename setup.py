@@ -5,7 +5,7 @@ with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "README.MD"),
 
 setuptools.setup(
     name="codewars", # codewars when updating to pip
-    version="0.0.61",
+    version="0.0.62",
     author="0x78f1935",
     author_email="",
     description="A toolbox for daily use. This is just a toolbox to make my life easier. Maybe yours too..",
@@ -19,10 +19,12 @@ setuptools.setup(
         "Development Status :: 1 - Planning"
     ],
     install_requires=[
-        'PyBluez',
+        'aiohttp',
+        'beautifulsoup4',
         'ipython',
-        'scapy',
-        'aiohttp'
+        'lxml',
+        'PyBluez',
+        'scapy'
     ],
     python_requires='>=3.6.*',
     include_package_data=True,
