@@ -114,7 +114,9 @@ class Wifi(object):
             results = self.info(self.sniff())
             for item in results:
                 if item not in self.__listener: self.__listener.append(item)
-            if self.__listener: self.__logger.info("\n".join([f"{datetime.utcnow()} - {i}" for i in self.__listener][:-1]))
+            if self.__listener:
+                for item in self.__listener:
+                    self.__logger.info(f"{datetime.utcnow()} - {item}")
 
     def info(self, packages = []):
         """Look for information about a package
