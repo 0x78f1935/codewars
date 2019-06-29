@@ -13,6 +13,7 @@ before_install:
 addons:
   apt:
     update: true
-    
+
 install:
+  - pip install git+https://github.com/secdev/scapy@master
   - pip install git+https://github.com/0x78f1935/codewars@master
