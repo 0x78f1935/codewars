@@ -5,7 +5,10 @@
 ## Dependencies
 ### Required: 
     - `sudo apt-get install gcc`
+### Bluetooth
     - `sudo apt-get install libbluetooth-dev`
+### Scraping
+    - `sudo apt-get install python3-lxml`
 
 ---
 ## Install latest version (stable)

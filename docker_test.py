@@ -30,7 +30,7 @@ from codewars.surf import Surfer
 from asyncio import get_event_loop
 surf = Surfer(loop=get_event_loop())
 # GET METHODS
-print(surf.get(url='http://httpbin.org/get')) # Read page
+data = surf.get(url='https://codewars.nl/static/docs/index.html') # Read page
 print(surf.get(url='http://httpbin.org/get', json=True)) # Read json
 print(surf.get(url='http://httpbin.org/basic-auth/test/test1123', auth=('test', 'test1123'), json=True))
 # POST METHODS
@@ -46,7 +46,8 @@ print(surf.post(
 
 from codewars.scraper import Scraper
 scraper = Scraper(debug=True)
-scraper.hrefs(url = 'https://codewars.nl/space')
+print(scraper.hrefs(data[1].decode()))
 
 from codewars.unittest import Test
 print(Test().run())
+

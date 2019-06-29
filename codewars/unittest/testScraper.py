@@ -1,4 +1,6 @@
 from codewars.scraper import Scraper
+from codewars.surf import Surfer
+from asyncio import get_event_loop
 import unittest
 
 class TestScraper(unittest.TestCase):
@@ -6,14 +8,16 @@ class TestScraper(unittest.TestCase):
     def setUp(self):
         """Executes before EACH test"""
         self.scraper = Scraper()
+        self.surf = Surfer(get_event_loop())
 
     def tearDown(self):
         """Executes after EACH test"""
         del self.scraper
+        del self.surf
 
     def test_ScrapeHREF(self):
         data = self.scraper.hrefs(
-            url='https://codewars.nl/discord/luffy'
+            data=self.surf.get(url='https://codewars.nl/static/docs/index.html')[1].decode()
             )
 
         self.assertEqual(
@@ -23,6 +27,6 @@ class TestScraper(unittest.TestCase):
         )
         self.assertEqual(
             len(data),
-            1,
+            3,
             "The webpage did not returned bytes"
         )
