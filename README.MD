@@ -29,9 +29,9 @@
 
 ## Docker
 
-There is also a `Dockerfile` and a `docker-compose.yaml` file which include a
-python build where codewars will be preinstalled. You can modify the dockerfile
-to your liking. The `Dockerfile` downloads always the unstable version by **default**.
+Docker is supported. A image with pre-installed codewars and python3.8 in it.
+You can visit the [Docker Hub Repo](https://cloud.docker.com/repository/registry-1.docker.io/codewarsnl/codewars) to download
+the latest docker image. There are two tags available. `latest` and `stable`. It's recommended to use the `stable` build.
 
 # Examples
 ## Info
