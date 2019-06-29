@@ -32,6 +32,41 @@ class Wifi(object):
         conf.iface = iAddr
         self.__listener = []
         self.__logger = Logger("Codewars Wifi")
+
+    # def sniff_ssid(self, forever=False):
+    #     """Sniff network for SSIDs
+        
+    #     Parameters
+    #     ----------
+    #     forever
+    #         Type: bool
+    #         Default: False
+    #         Description: Sniff SSIDs on the network
+    #         True: Scan forever, pauzes script
+    #         False: Scan X amount of time
+
+    #     Returns
+    #     -------
+    #     List
+    #         Type: List
+    #         Content: String
+    #         Description: List of SSID's found while sniffing
+            
+    #     Note
+    #     ----
+    #     TODO This function still needs testing
+    #     """
+    #     results = []
+    #     def PacketHandler(packet):
+    #         if packet.haslayer(Dot11):
+    #             if packet.type == 0 and packet.subtype == 8:
+    #                 if packet.addr2 not in results:
+    #                     results.append((packet.addr2, packet.info))
+    #                     self.__logger.info("Access Point MAC: {packet.addr2} with SSID: {packet.info} ")
+    #     if forever: sniff(prn=PacketHandler)
+    #     else: sniff(prn=PacketHandler, count=100)
+    #     return results
+
     
     def sniff(self, totalResults = 10):
         """Sniff Network packages on the selected `iAddr`
