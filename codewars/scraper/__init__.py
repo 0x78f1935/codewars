@@ -22,15 +22,15 @@ class Scraper(object):
         self.__debug = debug
         self.__surf = Surfer(get_event_loop())
 
-    def hrefs(self, url: str = None):
+    def hrefs(self, data: str = None):
         """ Scrape a url for more urls :D
 
         Parameters
         ----------
-        url
+        data
             Default: None
             Type: String
-            Description: The url to scrape.
+            Description: The data to scrape.
 
         Returns
         -------
@@ -40,15 +40,11 @@ class Scraper(object):
             Description: All the endpoints found while scraping
             Returns a empty list if nothing was found.
         """
-        if url is None: raise AttributeError("No url provided to scrape")
-        response = self.__surf.get(url)
-        if response[0] == 200:
-            data = response[1].decode()
-            soup = BeautifulSoup(data, 'lxml')
-            list1 = [link.get('href') for link in soup.findAll('a', attrs={'href': re.compile("^(http|https|/|)://")})]
-            list2 = re.findall(r'(?<=<a href=")[^"]*', data)
-            for link in list2: list1.append(link)
-            if self.__debug:
-                for item in list(set(list1)): self.__logger.debug(f"Found: {item}")
-            return list(set(list1))
-        else: return []
+        if data is None: raise AttributeError("No url provided to scrape")
+        soup = BeautifulSoup(data, 'lxml')
+        list1 = [link.get('href') for link in soup.findAll('a', attrs={'href': re.compile("^(http|https|/|)://")})]
+        list2 = re.findall(r'(?<=<a href=")[^"]*', data)
+        for link in list2: list1.append(link)
+        if self.__debug:
+            for item in list(set(list1)): self.__logger.debug(f"Found: {item}")
+        return list(set(list1))
