@@ -1,6 +1,10 @@
 dist: xenial   # required for Python >= 3.7
 language: python
 python:
+  - "3.6"
+  - "3.6-dev"
+  - "3.7"
+  - "3.7-dev"  # 3.7 development branch
   - "3.8-dev"  # 3.8 development branch
   - "nightly"  # nightly build
 before_install:
@@ -11,5 +15,8 @@ addons:
     update: true
 
 install:
-  - pip install --pre scapy
+  - pip install --pre scrapy
   - pip install git+https://github.com/0x78f1935/codewars@master
+
+script:
+  - python docker_test.py
