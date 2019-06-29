@@ -28,7 +28,7 @@
 
 There is also a `Dockerfile` and a `docker-compose.yaml` file which include a
 python build where codewars will be preinstalled. You can modify the dockerfile
-to your liking.
+to your liking. The `Dockerfile` downloads always the unstable version by **default**.
 
 # Examples
 ## Info
