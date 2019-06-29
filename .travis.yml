@@ -15,7 +15,6 @@ addons:
     update: true
 
 install:
-  - pip install --pre scrapy
   - pip install git+https://github.com/0x78f1935/codewars@master
 
 script:
