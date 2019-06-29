@@ -33,7 +33,7 @@ to your liking. The `Dockerfile` downloads always the unstable version by **defa
 # Examples
 ## Info
 
-#### Refer for detailed documentation to [here]('https://codewars.nl/static/docs/index.html')
+#### Refer for detailed documentation to [here](https://codewars.nl/static/docs/index.html)
 
 >In the following section you will find a brief example on how to use this
 >code. This library is ment to grow over time so more examples to come... 
@@ -119,4 +119,4 @@ to your liking. The `Dockerfile` downloads always the unstable version by **defa
     ```
 
 ---
-#### Refer for detailed documentation to [here]('https://codewars.nl/static/docs/index.html')
+#### Refer for detailed documentation to [here](https://codewars.nl/static/docs/index.html)
