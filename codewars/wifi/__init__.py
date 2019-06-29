@@ -90,6 +90,9 @@ class Wifi(object):
             return [pk for pk in sniff(count=totalResults)]
         except PermissionError:
             raise OSError("Run as admin or provide the right permissions to this application in order to use the codewars wifi module")
+        except OSError:
+            self.__logger.warning("Network device not found")
+            return []
 
     def sniff_forever(self, duration: int = 300):
         """Sniffs forever and stores its data in self.__listener
@@ -111,7 +114,7 @@ class Wifi(object):
             results = self.info(self.sniff())
             for item in results:
                 if item not in self.__listener: self.__listener.append(item)
-            self.__logger.info("\n".join([f"{datetime.utcnow()} - {i}" for i in self.__listener][:-1]))
+            if self.__listener: self.__logger.info("\n".join([f"{datetime.utcnow()} - {i}" for i in self.__listener][:-1]))
 
     def info(self, packages = []):
         """Look for information about a package
@@ -133,6 +136,6 @@ class Wifi(object):
         try:
             if packages:
                 return [pk.summary() for pk in packages]
-            else: raise AttributeError("The list you want to sniff info from is empty!")
+            else: self.__logger.warning("The list you want to sniff info from is empty!")
         except PermissionError:
             raise OSError("Run as admin or provide the right permissions to this application in order to use the codewars wifi module")
