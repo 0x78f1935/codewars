@@ -5,9 +5,14 @@ python:
   - "3.6-dev"
   - "3.7"
   - "3.7-dev"  # 3.7 development branch
-  - "3.8"
   - "3.8-dev"  # 3.8 development branch
   - "nightly"  # nightly build
-
+before_install:
+  - sudo apt-get install libbluetooth-dev libxml2-dev libxslt1-dev zlib1g-dev -y
+  - sudo apt-get install python3-lxml -y
+addons:
+  apt:
+    update: true
+    
 install:
   - pip install git+https://github.com/0x78f1935/codewars@master
