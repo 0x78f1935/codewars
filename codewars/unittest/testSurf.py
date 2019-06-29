@@ -1,5 +1,5 @@
 from codewars.surf import Surfer
-import unittest, sys, asyncio
+import unittest, asyncio
 
 class TestSurf(unittest.TestCase):
 

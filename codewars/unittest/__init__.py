@@ -1,5 +1,6 @@
 
 from codewars.unittest.testSurf import TestSurf
+from codewars.unittest.testScraper import TestScraper
 import unittest
 
 class Test(object):
@@ -9,7 +10,8 @@ class Test(object):
         self.__suite = unittest.TestSuite()
 
         # add tests to the test suite
-        self.__suite.addTests(self.__loader.loadTestsFromModule(TestSurf())) # unfinished
+        self.__suite.addTests(self.__loader.loadTestsFromModule(TestSurf()))
+        self.__suite.addTests(self.__loader.loadTestsFromModule(TestScraper()))
 
         # initialize a runner, pass it your suite and run it
         if debug: self.runner = unittest.TextTestRunner(verbosity=3)
