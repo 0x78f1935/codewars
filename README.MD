@@ -24,6 +24,12 @@
 
     pip install git+https://github.com/0x78f1935/codewars@master
 
+## Docker
+
+There is also a `Dockerfile` and a `docker-compose.yaml` file which include a
+python build where codewars will be preinstalled. You can modify the dockerfile
+to your liking.
+
 # Examples
 ## Info
 
