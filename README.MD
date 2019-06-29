@@ -10,7 +10,7 @@
 
     pip install codewars
 
-### Alternative latest version (stable)
+### Alternative versions
 
     1. Go to "https://github.com/0x78f1935/codewars/releases" and do
     2. Download the latest version, unzip it.
