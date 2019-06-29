@@ -1,1 +1,1 @@
-cd docs && make html
+cd $PWD/docs && make html
