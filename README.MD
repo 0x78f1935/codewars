@@ -42,6 +42,14 @@
 >----
 >The whole module makes use of the `Logger` class instead of the `print` method.
 
+## UnitTests
+
+    Example:
+    ```
+    from codewars.unittest import Test
+    print(Test().run())
+    ```
+
 ## BlueTooth
 
     Example:
@@ -66,6 +74,29 @@
     info_results = wifi.info(sniff_results)
     print(info_results)
     wifi.sniff_forever(duration=300)
+    ```
+
+## Surfer
+
+    Example:
+    ```
+    from codewars.surf import Surfer
+    from asyncio import get_event_loop
+    surf = Surfer(loop=get_event_loop())
+    # GET METHODS
+    print(surf.get(url='http://httpbin.org/get')) # Read page
+    print(surf.get(url='http://httpbin.org/get', json=True)) # Read json
+    print(surf.get(url='http://httpbin.org/basic-auth/test/test1123', auth=('test', 'test1123'), json=True))
+    # POST METHODS
+    print(surf.post(
+        url='http://httpbin.org/post',
+        header={'api_key': 'special-key'},
+        data={
+            "id": 0x78f1935,
+            "username": "codewars",
+        },
+        json=True
+        ))
     ```
 
 ---
