@@ -3,7 +3,7 @@ alabaster
 async-timeout
 atomicwrites
 attrs
-Babel
+Babel==2.7.0
 backcall
 beautifulsoup4
 certifi
