@@ -7,7 +7,7 @@ Babel
 backcall
 beautifulsoup4
 certifi
-chardet
+chardet==3.0.4
 codewars
 coverage
 decorator
