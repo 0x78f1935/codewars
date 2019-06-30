@@ -2,8 +2,6 @@
   python:
     - "3.6"
     - "3.6-dev"  # 3.6 development branch
-  virtualenv:
-    system_site_packages: true
   install:
     - pip install git+https://github.com/0x78f1935/codewars@master
   script:

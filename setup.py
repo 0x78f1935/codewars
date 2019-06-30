@@ -26,7 +26,7 @@ setuptools.setup(
         'PyBluez',
         'scapy'
     ],
-    python_requires='>=3.5.*',
+    python_requires='>=3.6.*',
     include_package_data=True,
     zip_safe=False
 )
