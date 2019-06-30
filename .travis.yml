@@ -4,6 +4,6 @@
     - "3.6-dev"  # 3.6 development branch
   install:
     - sudo apt-get install bluetooth libbluetooth-dev
-    - pip install git+https://github.com/0x78f1935/codewars@master
+    - sudo ~/virtualenv/python3.6/bin/python -m pip install git+https://github.com/0x78f1935/codewars@master
   script:
-    - sudo python docker_test.py
+    - sudo ~/virtualenv/python3.6/bin/python docker_test.py
