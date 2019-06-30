@@ -1,5 +1,5 @@
 aiohttp
-alabaster
+alabaster==0.7.12
 async-timeout
 atomicwrites
 attrs
