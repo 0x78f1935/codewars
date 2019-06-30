@@ -20,7 +20,6 @@ addons:
 
 install:
   - sudo python3 -m pip install --upgrade pip setuptools
-  - sudo python3 -m pip install -r requirements.txt
   - sudo python3 -m pip install git+https://github.com/0x78f1935/codewars@master
 
 script:
