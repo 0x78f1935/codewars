@@ -23,7 +23,7 @@ Jinja2
 lxml
 MarkupSafe
 more-itertools
-multidict
+multidict==4.5.2
 packaging
 parso
 pexpect
