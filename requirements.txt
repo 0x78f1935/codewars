@@ -8,7 +8,7 @@ backcall
 beautifulsoup4
 certifi
 chardet
-codewars
+codewars==0.0.621
 coverage
 decorator
 docutils
