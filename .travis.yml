@@ -16,7 +16,7 @@ addons:
     update: true
 
 install:
-  - pip install git+https://github.com/0x78f1935/codewars@master
+  - sudo python3 -m pip install git+https://github.com/0x78f1935/codewars@master
 
 script:
   - sudo python3 docker_test.py
