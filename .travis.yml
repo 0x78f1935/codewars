@@ -12,7 +12,8 @@ virtualenv:
 before_install:
   - sudo apt-get install libbluetooth-dev libxml2-dev libxslt1-dev zlib1g-dev -y
   - sudo apt-get install python3-lxml -y
-  - sudo apt-get install python3-pip python3-setuptools -y
+  - sudo apt-get install python3-pip 
+  - sudo apt-get install python3-setuptools -y
 
 addons:
   apt:
