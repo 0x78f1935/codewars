@@ -6,4 +6,3 @@ services:
 before_install:
   - docker build -t codewarsnl/codewars:latest .
   - docker ps -a
-  - docker run codewarsnl/codewars python -c "import codewars"
