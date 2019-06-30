@@ -1,25 +1,9 @@
-dist: xenial   # required for Python >= 3.7
-python:
-  - "3.6"
-  - "3.6-dev"
-  - "3.7"
-  - "3.7-dev"  # 3.7 development branch
-  - "3.8-dev"  # 3.8 development branch
-  - "nightly"  # nightly build
+language: ruby
+
+services:
+  - docker
 
 before_install:
-  - sudo apt-get install libbluetooth-dev libxml2-dev libxslt1-dev zlib1g-dev -y
-  - sudo apt-get install python3-lxml -y
-  - sudo apt-get install python3-pip 
-  - sudo apt-get install python3-setuptools -y
-
-addons:
-  apt:
-    update: true
-
-install:
-  - sudo python3 -m pip install --upgrade pip setuptools
-  - sudo python3 -m pip install git+https://github.com/0x78f1935/codewars@master
-
-script:
-  - sudo python3 docker_test.py
+  - docker build -t codewarsnl/codewars .
+  - docker ps -a
+  - docker run codewarsnl/codewars python -c "import codewars"
