@@ -13,13 +13,13 @@ before_install:
   - sudo apt-get install python3-lxml -y
   - sudo apt-get install python3-pip 
   - sudo apt-get install python3-setuptools -y
-  - sudo python3 -m pip install --upgrade pip setuptools
 
 addons:
   apt:
     update: true
 
 install:
+  - sudo python3 -m pip install --upgrade pip setuptools
   - sudo python3 -m pip install -r requirements.txt
   - sudo python3 -m pip install git+https://github.com/0x78f1935/codewars@master
 
