@@ -10,7 +10,7 @@ certifi
 chardet
 codewars
 coverage
-decorator
+decorator==4.4.0
 docutils
 idna
 idna-s
