@@ -24,7 +24,7 @@ setuptools.setup(
         'ipython',
         'lxml',
         'PyBluez',
-        'scapy[basic]'
+        'scapy'
     ],
     python_requires='>=3.5.*',
     include_package_data=True,
