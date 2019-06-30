@@ -54,6 +54,6 @@ sphinxcontrib-serializinghtml
 traitlets
 typing-extensions
 urllib3
-wcwidth
+wcwidth==0.1.7
 yarl
 zipp
