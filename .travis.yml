@@ -21,7 +21,6 @@ addons:
 install:
   - sudo python3 -m pip install -r requirements.txt
   - sudo python3 -m pip install git+https://github.com/0x78f1935/codewars@master
-  - sudo python3 -m pytest --cov=./
 
 script:
   - sudo python3 docker_test.py
