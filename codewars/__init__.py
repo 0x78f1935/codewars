@@ -1,7 +1,10 @@
 name = "codewars"
 __created_by__ = "codewars.nl"
 
-from pip._internal import main
+try:
+    from pip._internal import main
+except ImportError:
+    from pip import main
 
 def import_or_install(package):
     try:
