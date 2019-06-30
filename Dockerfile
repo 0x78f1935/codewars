@@ -8,4 +8,4 @@ RUN apt-get install libxml2-dev libxslt1-dev zlib1g-dev -y && apt-get install py
 # RUN pip install codewars # LIVE ENV
 RUN pip install git+https://github.com/0x78f1935/codewars@master # DEBUG ENV
 ADD docker_test.py /docker_test.py
-RUN python /docker_test.py
+CMD python /docker_test.py
