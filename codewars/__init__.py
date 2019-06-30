@@ -18,6 +18,6 @@ packages = [
     'ipython',
     'lxml',
     'PyBluez',
-    'scapy[basic]'
+    'scapy'
 ]
 for item in packages: import_or_install(item)
