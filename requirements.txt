@@ -45,7 +45,7 @@ snowballstemmer
 soupsieve
 Sphinx
 sphinx-rtd
-sphinxcontrib-applehelp
+sphinxcontrib-applehelp==1.0.1
 sphinxcontrib-devhelp
 sphinxcontrib-htmlhelp
 sphinxcontrib-jsmath
