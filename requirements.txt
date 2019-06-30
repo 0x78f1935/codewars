@@ -2,7 +2,7 @@ aiohttp
 alabaster
 async-timeout
 atomicwrites
-attrs
+attrs==19.1.0
 Babel
 backcall
 beautifulsoup4
