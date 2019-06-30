@@ -36,6 +36,8 @@ the latest docker image. There are two tags available. `latest` and `stable`. It
 # Examples
 ## Info
 
+You can use `import codewars` to check if all dependencies are insalled.
+
 #### Refer for detailed documentation to [here](https://codewars.nl/static/docs/index.html)
 
 >In the following section you will find a brief example on how to use this

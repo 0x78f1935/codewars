@@ -1,3 +1,4 @@
+import codewars
 ## Test WIFI
 from codewars.wifi import Wifi
 wifi = Wifi("eth0")
