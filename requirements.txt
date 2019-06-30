@@ -14,7 +14,7 @@ decorator
 docutils
 idna
 idna-s
-imagesize
+imagesize==1.1.0
 importlib-metadata
 ipython
 ipython-genutils
