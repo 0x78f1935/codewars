@@ -46,5 +46,5 @@ class Scraper(object):
         list2 = re.findall(r'(?<=<a href=")[^"]*', data)
         for link in list2: list1.append(link)
         if self.__debug:
-            for item in list(set(list1)): self.__logger.debug(f"Found: {item}")
+            for item in list(set(list1)): self.__logger.debug("Found: {}".format(item))
         return list(set(list1))

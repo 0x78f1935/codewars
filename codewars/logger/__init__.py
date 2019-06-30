@@ -79,7 +79,7 @@ class Logger(object):
                 level=self.__level,
                 format='%(asctime)s %(name)-12s %(levelname)-8s %(message)s',
                 datefmt='%m-%d %H:%M',
-                filename=path.join(path.join(path.dirname(path.abspath(__file__)), 'logs'), f'{self.__appname}.log'),
+                filename=path.join(path.join(path.dirname(path.abspath(__file__)), 'logs'), '{}.log'.format(self.__appname)),
                 filemode='w'
             )
         else:
@@ -101,7 +101,7 @@ class Logger(object):
 
     def __repr__(self):
         """Shows information when the class is called in a print statement"""
-        return f"Codewars Logger {self.__appname}"
+        return "Codewars Logger {}".format(self.__appname)
 
     def debug(self, msg):
         """Logs a message on DEBUG level."""
