@@ -32,7 +32,7 @@ pluggy
 prompt-toolkit
 ptyprocess
 py
-PyBluez
+PyBluez==0.22
 Pygments
 pyparsing
 pytest
