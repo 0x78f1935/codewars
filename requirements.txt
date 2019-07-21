@@ -11,7 +11,7 @@ chardet
 codewars
 coverage
 decorator
-docutils
+docutils==0.15
 idna
 idna-s
 imagesize
