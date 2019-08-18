@@ -42,7 +42,7 @@ requests
 scapy
 six
 snowballstemmer
-soupsieve
+soupsieve==1.9.3
 Sphinx
 sphinx-rtd
 sphinxcontrib-applehelp
