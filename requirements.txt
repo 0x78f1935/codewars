@@ -41,7 +41,7 @@ pytz
 requests
 scapy
 six
-snowballstemmer
+snowballstemmer==1.9.1
 soupsieve
 Sphinx
 sphinx-rtd
