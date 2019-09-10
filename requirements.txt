@@ -28,7 +28,7 @@ packaging
 parso
 pexpect
 pickleshare
-pluggy
+pluggy==0.13.0
 prompt-toolkit
 ptyprocess
 py
