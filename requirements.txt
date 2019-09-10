@@ -15,7 +15,7 @@ docutils
 idna
 idna-s
 imagesize
-importlib-metadata
+importlib-metadata==0.21
 ipython
 ipython-genutils
 jedi
