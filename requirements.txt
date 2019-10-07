@@ -19,7 +19,7 @@ importlib-metadata
 ipython
 ipython-genutils
 jedi
-Jinja2
+Jinja2==2.10.3
 lxml
 MarkupSafe
 more-itertools
