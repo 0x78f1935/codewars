@@ -36,7 +36,7 @@ PyBluez
 Pygments
 pyparsing
 pytest
-pytest-cov
+pytest-cov==2.8.1
 pytz
 requests
 scapy
