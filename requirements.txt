@@ -43,7 +43,7 @@ scapy
 six
 snowballstemmer
 soupsieve
-Sphinx
+Sphinx==2.2.1
 sphinx-rtd
 sphinxcontrib-applehelp
 sphinxcontrib-devhelp
