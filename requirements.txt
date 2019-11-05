@@ -40,7 +40,7 @@ pytest-cov
 pytz
 requests
 scapy
-six
+six==1.13.0
 snowballstemmer
 soupsieve
 Sphinx
