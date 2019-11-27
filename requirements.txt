@@ -33,7 +33,7 @@ prompt-toolkit
 ptyprocess
 py
 PyBluez
-Pygments
+Pygments==2.5.1
 pyparsing
 pytest
 pytest-cov
