@@ -29,7 +29,7 @@ parso
 pexpect
 pickleshare
 pluggy
-prompt-toolkit
+prompt-toolkit==3.0.3
 ptyprocess
 py
 PyBluez
