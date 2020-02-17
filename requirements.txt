@@ -56,4 +56,4 @@ typing-extensions
 urllib3
 wcwidth
 yarl
-zipp
+zipp==2.2.1
