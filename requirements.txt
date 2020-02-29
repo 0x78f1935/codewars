@@ -46,7 +46,7 @@ soupsieve
 Sphinx
 sphinx-rtd
 sphinxcontrib-applehelp
-sphinxcontrib-devhelp
+sphinxcontrib-devhelp==1.0.2
 sphinxcontrib-htmlhelp
 sphinxcontrib-jsmath
 sphinxcontrib-qthelp
