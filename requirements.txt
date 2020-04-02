@@ -52,7 +52,7 @@ sphinxcontrib-jsmath
 sphinxcontrib-qthelp
 sphinxcontrib-serializinghtml
 traitlets
-typing-extensions
+typing-extensions==3.7.4.2
 urllib3
 wcwidth
 yarl
