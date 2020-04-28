@@ -1,7 +1,7 @@
 aiohttp
 alabaster
 async-timeout
-atomicwrites
+atomicwrites==1.4.0
 attrs
 Babel
 backcall
