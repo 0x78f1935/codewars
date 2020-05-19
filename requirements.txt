@@ -24,7 +24,7 @@ lxml
 MarkupSafe
 more-itertools
 multidict
-packaging
+packaging==20.4
 parso
 pexpect
 pickleshare
