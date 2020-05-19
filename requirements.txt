@@ -20,7 +20,7 @@ ipython
 ipython-genutils
 jedi
 Jinja2
-lxml
+lxml==4.5.1
 MarkupSafe
 more-itertools
 multidict
