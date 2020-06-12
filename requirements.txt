@@ -4,7 +4,7 @@ async-timeout
 atomicwrites
 attrs
 Babel
-backcall
+backcall==0.2.0
 beautifulsoup4
 certifi
 chardet
