@@ -31,7 +31,7 @@ pickleshare
 pluggy
 prompt-toolkit
 ptyprocess
-py
+py==1.8.2
 PyBluez
 Pygments
 pyparsing
