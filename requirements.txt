@@ -6,7 +6,7 @@ attrs
 Babel
 backcall
 beautifulsoup4
-certifi
+certifi==2020.6.20
 chardet
 codewars
 coverage
