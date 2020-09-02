@@ -39,7 +39,7 @@ pytest
 pytest-cov
 pytz
 requests
-scapy
+scapy==2.4.4
 six
 snowballstemmer
 soupsieve
