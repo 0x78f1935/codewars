@@ -1,4 +1,4 @@
-aiohttp
+aiohttp==3.6.3
 alabaster
 async-timeout
 atomicwrites
