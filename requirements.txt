@@ -55,5 +55,5 @@ traitlets
 typing-extensions
 urllib3
 wcwidth
-yarl
+yarl==1.6.1
 zipp
