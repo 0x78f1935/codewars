@@ -16,7 +16,7 @@ idna
 idna-s
 imagesize
 importlib-metadata
-ipython
+ipython==7.19.0
 ipython-genutils
 jedi
 Jinja2
