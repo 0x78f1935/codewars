@@ -37,7 +37,7 @@ Pygments
 pyparsing
 pytest
 pytest-cov
-pytz
+pytz==2020.4
 requests
 scapy
 six
