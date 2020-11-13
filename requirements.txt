@@ -53,7 +53,7 @@ sphinxcontrib-qthelp
 sphinxcontrib-serializinghtml
 traitlets
 typing-extensions
-urllib3
+urllib3==1.26.2
 wcwidth
 yarl
 zipp
