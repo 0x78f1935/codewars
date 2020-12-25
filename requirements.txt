@@ -18,7 +18,7 @@ imagesize
 importlib-metadata
 ipython
 ipython-genutils
-jedi
+jedi==0.18.0
 Jinja2
 lxml
 MarkupSafe
