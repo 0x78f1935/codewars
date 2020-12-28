@@ -30,7 +30,7 @@ pexpect
 pickleshare
 pluggy
 prompt-toolkit
-ptyprocess
+ptyprocess==0.7.0
 py
 PyBluez
 Pygments
