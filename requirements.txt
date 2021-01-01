@@ -12,7 +12,7 @@ codewars
 coverage
 decorator
 docutils
-idna
+idna==3.0
 idna-s
 imagesize
 importlib-metadata
